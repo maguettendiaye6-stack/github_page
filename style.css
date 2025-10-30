@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family:'ZalandoZalando Sans SemiExpanded',sans-serif ;
+}
+body{
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-width: 1000px;
+    background:floralwhite;
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.842);
+    border-radius: 20px;;
+    }
+.container .left-side{
+    position: relative;
+    background: brown;
+    padding: 40px;
+    border-radius: 20px;
+}
+.profileTexte{
+    position:relative ;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2,);
+}
+.profileTexte .imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden ;
+}
+.profileTexte .imgBx img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.profileTexte h2{
+  color:floralwhite ;
+  font-size: 1.5em ;
+  margin-top: 20px ;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.profileTexte h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+.contactInfo{
+    padding: 40px;
+}
+.title{
+    color: floralwhite;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px ;
+}
+.contactInfo ul{
+    position: relative;
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .Icone{
+    display: inline-block ;
+    width: 20px;
+    font-size: 18px;
+    color:rgb(255,161,161);
+}
+
+.contactInfo ul li span{
+    color: floralwhite;
+    font-weight:300 ;
+}
+.contactInfo.education li{
+ margin-bottom: 15px;
+ margin-bottom: 15px;
+}.contactInfo.education h5{
+    color:rgb(255,161,161);
+    font: weight 500px; ;
+}
+.contactInfo.contactInfo.education h4:nth-child{
+    color: floralwhite;
+    font: weight 500px;
+}
+.contactInfo.contactInfo.education h4{
+    color: floralwhite;
+    font: weight 300px;
+}
+.contactInfo.Language .percent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background:rgb(255,161,161);
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.Language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: gray;
+}
+.container .right-side{
+    position: relative;
+    background:floralwhite;
+    padding: 40px;
+}
+
+.container .right-side .title2 {
+    transition: .3s ease-in-out;
+    border-bottom: 3px solid crimson;
+}
+.container .right-side .title2:hover {
+    color: crimson;
+    border-bottom: 3px solid crimson;
+}
+.about{
+    margin-bottom: 50px;
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color:#003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+P{
+    color: #333;
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li{
+    list-style: none;
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+}
+.interest ul li .fa{
+    color: rgb(255,108,108);
+    font-size:18px;
+    width: 20px;
+}
+@media(max-width:100px)
+{
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,2fr);
+    }
+}
+@media(max-width:600px)
+{
+    .about .box{
+        flex-direction: column;
+    }
+    .about .year_company{
+        margin-bottom: 5px;
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+    
+
+    
