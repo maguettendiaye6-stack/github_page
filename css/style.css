@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zalando Sans SemiExpanded', sans-serif;
+}
+
+
+body {
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    background: floralwhite;
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* ================= LEFT SIDE ================= */
+.left-side {
+    background: #a52a2a;
+    padding: 30px 20px;
+    color: floralwhite;
+}
+
+.profileTexte {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profileTexte .imgBx {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileTexte .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileTexte h2 {
+    font-size: 1.4em;
+    margin-top: 15px;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.profileTexte h2 span {
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+.contactInfo {
+    margin-top: 25px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color:#fff;
+    border-bottom: 2px solid #ffd6d6;
+    padding-bottom: 5px;
+}
+
+.contactInfo ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contactInfo ul li {
+    margin: 10px 0;
+    font-size: 0.95em;
+}
+
+.contactInfo ul li span {
+    color: #fff;
+}
+
+.contactInfo ul li .Icone {
+    width: 20px;
+    display: inline-block;
+    color: rgb(255,161,161);;
+}
+
+.contactInfo.education h5 {
+    color: rgb(255,161,161);
+}
+
+.contactInfo.education h4 {
+    color: #fff;
+}
+.right-side {
+    padding: 40px 30px;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid crimson;
+}
+
+p {
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+li {
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.interest ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    gap: 10px;
+    padding: 0;
+}
+
+.interest ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.interest ul li .fa {
+    color: rgb(255,108,108);
+    font-size: 18px;
+}
+
+/* ================= RESPONSIVE DESIGN ================= */
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 90%;
+    }
+
+    .left-side,
+    .right-side {
+        padding: 25px;
+    }
+
+    .profileTexte .imgBx {
+        width: 150px;
+        height: 150px;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .profileTexte .imgBx {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profileTexte h2 {
+        font-size: 1.2em;
+    }
+
+    .right-side, .left-side {
+        padding: 20px;
+    }
+
+    .interest ul {
+        grid-template-columns: 1fr;
+    }
+
+    p, li {
+        font-size: 0.95em;
+    }
+}
+/* === SECTION LANGUES === */
+.contactInfo.Language {
+    margin-top: 30px;
+}
+
+.contactInfo.Language .title {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffd6d6;
+    padding-bottom: 5px;
+}
+
+.contactInfo.Language ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contactInfo.Language ul li {
+    margin-bottom: 15px;
+}
+
+.contactInfo.Language .text {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* Barres de progression */
+.contactInfo.Language .percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    display: block;
+}
+
+.contactInfo.Language .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #ffd6d6; /* rose clair visible */
+    border-radius: 3px;
+    transition: width 0.5s ease-in-out;
+}
+
+
+    
+
+    
